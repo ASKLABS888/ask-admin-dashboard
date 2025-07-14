@@ -176,6 +176,22 @@
 
     <body class="staticrypt-body">
         <div id="staticrypt_loading" class="staticrypt-spinner-container">
+            <form id="staticrypt-form" class="staticrypt-form">
+  <div class="staticrypt-form__header">
+    <h1>Protected Page</h1>
+    <p>This page is password protected. Please enter the password to continue.</p>
+  </div>
+  <div class="staticrypt-form__input">
+    <input id="staticrypt-password" type="password" name="password" placeholder="Enter password" required />
+  </div>
+  <div class="staticrypt-form__button">
+    <button type="submit">Decrypt Page</button>
+  </div>
+  <div id="staticrypt-error" class="staticrypt-form__error" style="display:none">
+    Incorrect password. Please try again.
+  </div>
+</form>
+
             <div class="staticrypt-spinner"></div>
         </div>
 
